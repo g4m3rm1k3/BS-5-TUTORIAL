@@ -84,9 +84,13 @@
 						</p>
 						<a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
 						<!-- open disbar / offcanvas -->
+						<a href="#sidebar" class="d-block mt-3" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">
+							Explore my other books
+						</a>
 
 					</div>
 					<div class="col-md-5 text-center d-none d-md-block">
+						<!-- tooltip -->
 						<span class="tt" data-bs-placement="bottom" title="Net Ninja Book Cover">
 						<img
 							class="img-fluid"
@@ -527,6 +531,40 @@
 				</div>
 			</div>
 		</div>
+		<!-- offcanvas -->
+		<div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+			<div class="offcanvas-header">
+				<h5 class="offcanvas-title" id="sidebar-label">My Other Books</h5>
+				<button class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body">
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+					Pariatur cum tempora asperiores? Iusto soluta exercitationem
+					et voluptate officiis tenetur expedita iste! Veritatis accusamus
+					sapiente neque. Ratione voluptates eligendi mollitia optio doloribus
+					nostrum quis tempore commodi modi suscipit, sint assumenda impedit!</p>
+
+				<div class="dropdown mt-3">
+					<button class="btn btn-secondary dropdown-toggle" type="button" id="book-dropdown" data-bs-toggle="dropdown" >
+						Choose a book title
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="book-dropdown">
+						<li>
+							<a href="#" class="dropdown-item">Become a React Super Hero</a>
+						</li>
+						<li>
+							<a href="#" class="dropdown-item">Conquering Vue.js</a>
+						</li>
+						<li>
+							<a href="#" class="dropdown-item">Levelling up your Next.js</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+
 
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
